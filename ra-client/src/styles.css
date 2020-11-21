@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --black: #30343F;
+  --paper: #E0D3AF;
+  --paper-dark: #AEA280;
+  --red: #BA1F33;
+  --red-shaded: #83000D;
+  --sea: #3C91E6;
+  --success: #488B49;
+  --success-bg: #d0e7d0;
+  --fail: #BA1F33;
+  --fail-bg: #BA1F33;
+  --pending: #F9DC5C;
+  --pending-bg: #fcefb5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.app-max-width {
+  max-width: 1080px;
+}
