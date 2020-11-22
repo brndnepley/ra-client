@@ -1,0 +1,27 @@
+.xs-height {
+  height: 56px;
+}
+
+.xs-container {
+  background-color: var(--cBlack);
+  padding: 16px 8px;
+}
+
+.xs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+}
+
+.test {
+  background-color: white;
+  width:100%;
+  grid-column: 1;
+}
+
+.test2 {
+  background-color: white;
+  width:100%;
+  grid-column: 4;
+}
+
