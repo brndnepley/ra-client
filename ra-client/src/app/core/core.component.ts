@@ -12,4 +12,7 @@ export class CoreComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSignIn(): void {
+    alert('SIGN IN PRESSED!');
+  }
 }

@@ -1,7 +1,9 @@
-<div
-  class="app-mw"
-  [ngClass.xs]="'xs-container xs-grid xs-height'"
->
-  <div class="app-mw test"></div>
-  <div class="app-mw test2"></div>
-</div>
+<mat-toolbar>
+  <span>MYAPPNAME</span>
+  <span class="spacer"></span>
+  <button
+    mat-flat-button
+    (click)="onSignIn()">
+    SIGN IN
+  </button>
+</mat-toolbar>
