@@ -1,0 +1,22 @@
+:host {
+  height: 100%;
+  width: 100%;
+}
+
+.letter-box {
+  height: 100%;
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid black;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  background-color: pink;
+}

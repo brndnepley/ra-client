@@ -1,0 +1,43 @@
+<section
+  class="container"
+  [ngClass.xs]="'mobile-padding mobile-height'">
+
+  <div class="step-header">
+    <p class="step-progress-txt">STEP {{selectedIndex + 1}}/{{steps.length}}</p>
+    <p class="step-title">{{ stepTitles[selectedIndex] }}</p>
+    <mat-progress-bar
+      [color]="'primary'"
+      [mode]="'determinate'"
+      [value]="(selectedIndex + 1)/steps.length * 100">
+    </mat-progress-bar>
+  </div>
+
+  <div class="step-content">
+    <!-- Content from the CdkStep is projected here -->
+    <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+  </div>
+
+  <div class="step-footer-nav">
+    <button
+      mat-stroked-button
+      *ngIf="selectedIndex > 0; else previousSpacer"
+      cdkStepperPrevious>
+      Previous
+    </button>
+    <ng-template #previousSpacer>
+      <div class="prev-spacer"></div>
+    </ng-template>
+    <div class="btn-spacer"></div>
+    <button
+      mat-stroked-button
+      *ngIf="selectedIndex < steps.length - 1"
+      cdkStepperNext>Next
+    </button>
+    <button
+      mat-flat-button
+      [color]="'primary'"
+      *ngIf="selectedIndex == steps.length - 1"
+      cdkStepperNext>Send
+    </button>
+  </div>
+</section>

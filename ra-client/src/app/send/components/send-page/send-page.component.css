@@ -1,0 +1,7 @@
+.progress {
+  display: flex;
+}
+
+.mat-spinner.bg-circle {
+  stroke: gray;
+}

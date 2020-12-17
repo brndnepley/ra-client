@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,13 +11,13 @@ export class LandingPageComponent implements OnInit {
   @Output() tryIt = new EventEmitter<any>();
   @Output() howItWorks = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onTryIt(): void {
-    alert('Try it out.');
+    this.router.navigate(['send']);
   }
 
   onHowItWorks(): void {

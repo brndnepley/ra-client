@@ -3,24 +3,21 @@ import { SharedModule } from '../shared/shared.module';
 import { CoreComponent } from './core.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MaterialModule } from '../material/material.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { CoreRoutingModule } from './core-routing.module';
-import { LandingPageComponent } from '../landing-page/landing-page.component';
-
+import { LandingModule } from '../landing/landing.module';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     CoreComponent,
     HeaderComponent,
     FooterComponent,
-    LandingPageComponent
+    PagenotfoundComponent
   ],
   imports: [
     SharedModule,
     CoreRoutingModule,
-    FlexLayoutModule,
-    MaterialModule
+    LandingModule
   ],
   exports: [
     CoreComponent
