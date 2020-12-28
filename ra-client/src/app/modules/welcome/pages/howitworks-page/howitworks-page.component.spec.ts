@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { HowitworksPageComponent } from './howitworks-page.component';
+import { HowItWorksPageComponent } from './howitworks-page.component';
 
 describe('HowitworksPageComponent', () => {
-  let component: HowitworksPageComponent;
-  let fixture: ComponentFixture<HowitworksPageComponent>;
+  let component: HowItWorksPageComponent;
+  let fixture: ComponentFixture<HowItWorksPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HowitworksPageComponent ]
+      declarations: [ HowItWorksPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HowitworksPageComponent);
+    fixture = TestBed.createComponent(HowItWorksPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

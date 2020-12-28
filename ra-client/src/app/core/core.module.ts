@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
-import { CoreComponent } from './core.component';
+import { CoreComponent } from './components/core.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CoreRoutingModule } from './core-routing.module';
-import { LandingModule } from '../landing/landing.module';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { WelcomeModule } from '../modules/welcome';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
   imports: [
     SharedModule,
     CoreRoutingModule,
-    LandingModule
+    WelcomeModule
   ],
   exports: [
     CoreComponent

@@ -10,13 +10,14 @@
   border: 1px solid black;
 }
 
+.letter-box:focus-within {
+  box-shadow: 2px 2px 5px lightgrey;
+}
+
 textarea {
   height: 100%;
   width: 100%;
   resize: none;
   outline: none;
-}
-
-textarea:focus {
-  background-color: pink;
+  border: none;
 }
